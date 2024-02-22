@@ -30,7 +30,7 @@
 
           <div class="max-w-6xl mx-auto mt-12 sm:mt-16">
             <div
-              class="-m-2 rounded-xl bg-blue-900/5 p-2 backdrop-blur-sm ring-1 ring-inset ring-blue-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+              class="-m-2 rounded-xl bg-green-900/5 p-2 backdrop-blur-sm ring-1 ring-inset ring-blue-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <video class="rounded-md ring-1 ring-gray-200 shadow-xl shadow-blue-600/10 ring-blue-900/10" controls autoplay loop muted>
                 <source src="/video/opnform-ai.mp4" type="video/mp4">
 
@@ -108,7 +108,7 @@
 
 
               <div
-                class="w-16 h-16 rounded-full bg-blue-50 border-2 border-blue-200 hidden xl:inline-flex items-center justify-center text-blue-600 text-2xl font-semibold leading-none">
+                class="w-16 h-16 rounded-full bg-green-50 border-2 border-blue-200 hidden xl:inline-flex items-center justify-center text-blue-600 text-2xl font-semibold leading-none">
                 1
               </div>
 
@@ -133,7 +133,7 @@
                 class="w-full lg:flex-1 bg-gray-300 lg:shrink-0 rounded-2xl ring-1 ring-gray-200 shadow-sm lg:order-3"
                 src="/img/pages/ai_form_builder/step-2.svg" alt=""/>
               <div
-                class="w-16 h-16 lg:order-2 rounded-full bg-blue-50 border-2 border-blue-200 hidden xl:inline-flex items-center justify-center text-blue-600 text-2xl font-semibold leading-none">
+                class="w-16 h-16 lg:order-2 rounded-full bg-green-50 border-2 border-blue-200 hidden xl:inline-flex items-center justify-center text-blue-600 text-2xl font-semibold leading-none">
                 2
               </div>
 
@@ -155,7 +155,7 @@
               <NuxtImg class="w-full lg:flex-1 bg-gray-300 lg:shrink-0 rounded-2xl ring-1 ring-gray-200 shadow-sm"
               src="/img/pages/ai_form_builder/step-3.svg" alt=""/>
               <div
-                class="w-16 h-16 rounded-full bg-blue-50 border-2 border-blue-200 hidden xl:inline-flex items-center justify-center text-blue-600 text-2xl font-semibold leading-none">
+                class="w-16 h-16 rounded-full bg-green-50 border-2 border-blue-200 hidden xl:inline-flex items-center justify-center text-blue-600 text-2xl font-semibold leading-none">
                 3
               </div>
 

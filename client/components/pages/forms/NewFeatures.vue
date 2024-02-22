@@ -18,7 +18,7 @@
         </div>
         <div>
           <p class="text-gray-700 dark:text-gray-300 font-semibold">
-            New in OpnForm
+            New in Medkart
           </p>
           <p class="text-sm text-gray-700 dark:text-gray-300">
             Click here to see our new features

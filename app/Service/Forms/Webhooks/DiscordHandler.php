@@ -82,6 +82,6 @@ class DiscordHandler extends AbstractWebhookHandler
     {
         return !is_null($this->getWebhookUrl())
             && str_contains($this->getWebhookUrl(), 'https://discord.com/api/webhooks')
-            && $this->form->is_pro;
+            && $this->form;
     }
 }

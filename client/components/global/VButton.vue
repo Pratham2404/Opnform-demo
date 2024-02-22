@@ -85,8 +85,8 @@ export default {
     colorShades () {
       if (this.color === 'blue') {
         return {
-          main: 'bg-blue-600',
-          hover: 'hover:bg-blue-700',
+          main: 'bg-green-600',
+          hover: 'hover:bg-green-700',
           ring: 'focus:ring-blue-500',
           'ring-offset': 'focus:ring-offset-blue-200',
           text: 'text-white'
@@ -94,7 +94,7 @@ export default {
       } else if (this.color === 'outline-blue') {
         return {
           main: 'bg-transparent border border-blue-600',
-          hover: 'hover:bg-blue-600',
+          hover: 'hover:bg-green-600',
           ring: 'focus:ring-blue-500',
           'ring-offset': 'focus:ring-offset-blue-200',
           text: 'text-blue-600 hover:text-white'

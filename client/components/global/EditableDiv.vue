@@ -18,7 +18,7 @@
     >
       <input ref="editInputRef" v-model="content"
              class="absolute inset-0 focus:outline-none bg-white transition-colors"
-             :class="[{'bg-blue-50': editing}, contentClass]" @blur="editing = false" @keyup.enter="editing = false"
+             :class="[{'bg-green-50': editing}, contentClass]" @blur="editing = false" @keyup.enter="editing = false"
              @input="handleInput"
       >
     </div>

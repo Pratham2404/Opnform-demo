@@ -147,9 +147,7 @@ class Form extends Model implements CachableAttributes
 
     public function getIsProAttribute()
     {
-        return $this->remember('is_pro', 15 * 60, function (): ?bool {
-            return optional($this->workspace)->is_pro === true;
-        });
+        return true;
     }
 
     public function getShareUrlAttribute()

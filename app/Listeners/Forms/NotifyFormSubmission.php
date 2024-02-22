@@ -51,7 +51,7 @@ class NotifyFormSubmission implements ShouldQueue
      */
     private function sendEmailNotifications(FormSubmitted $event)
     {
-        if (!$event->form->is_pro || !$event->form->notifies) return;
+        if (!$event->form || !$event->form->notifies) return;
 
         $subscribers = collect(preg_split("/\r\n|\n|\r/", $event->form->notification_emails))->filter(function (
             $email

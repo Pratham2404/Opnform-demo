@@ -1,6 +1,10 @@
 
 export default {
-  "app_ame": "OpnForm",
+  server: {
+    port: 3000, // default: 3000
+    host: '192.168.1.86' // default: localhost
+  },
+  "app_ame": "Medkart",
   "locale": "en",
   "locales": {"en": "EN"},
   "githubAuth": null,

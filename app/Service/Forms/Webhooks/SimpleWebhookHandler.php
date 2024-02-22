@@ -19,6 +19,6 @@ class SimpleWebhookHandler extends AbstractWebhookHandler
 
     protected function shouldRun(): bool
     {
-        return !is_null($this->getWebhookUrl()) && $this->form->is_pro;
+        return !is_null($this->getWebhookUrl()) && $this->form;
     }
 }

@@ -2,7 +2,7 @@
   <div>
     <template v-if="displayAll">
       <span v-if="template.is_new"
-            class="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium text-white bg-blue-500 rounded-full"
+            class="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium text-white bg-green-500 rounded-full"
       >
         <svg aria-hidden="true" class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
              fill="currentColor"
@@ -20,7 +20,7 @@
         {{ item.name }}
       </span>
       <span v-for="item in industries" :key="item.slug"
-            class="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900 dark:text-gray-400 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
+            class="inline-flex items-center rounded-full bg-green-50 dark:bg-green-900 dark:text-gray-400 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
       >
         {{ item.name }}
       </span>
@@ -32,7 +32,7 @@
         {{ types[0].name }} <template v-if="types.length > 1">+{{ types.length - 1 }}</template>
       </span>
       <span v-if="industries.length > 0"
-            class="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
+            class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10"
       >
         {{ industries[0].name }} <template v-if="industries.length > 1">+{{ industries.length - 1 }}</template>
       </span>

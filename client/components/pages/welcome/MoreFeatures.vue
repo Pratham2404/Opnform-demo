@@ -4,7 +4,7 @@
         <div class="my-5 text-center">
           <h3 class="font-semibold text-3xl">And many more features</h3>
           <p class="w-full mt-2 mb-8">
-            OpnForm makes form building easy and comes with powerful features.
+            Medkart makes form building easy and comes with powerful features.
           </p>
           <div class="grid grid-cols-2 md:grid-cols-3 mt-10 mb-5 ml-5 md:ml-0 px-4">
             <div class="flex font-semibold my-3">

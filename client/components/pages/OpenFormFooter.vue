@@ -8,9 +8,9 @@
       </div>
       <div class="flex justify-center mt-5 md:mt-0">
         <router-link :to="{ name: user ? 'home' : 'index' }" class="flex-shrink-0 font-semibold flex items-center">
-          <img src="/img/logo.svg" alt="notion tools logo" class="w-10 h-10">
+          <img src="/img/logo.png" alt="notion tools logo" class="w-10 h-10">
           <span class="ml-2 text-xl text-black dark:text-white">
-            OpnForm
+            Medkart
           </span>
         </router-link>
       </div>

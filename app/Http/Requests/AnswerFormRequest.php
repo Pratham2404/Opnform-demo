@@ -62,6 +62,7 @@ class AnswerFormRequest extends FormRequest
                 if(isset($data[$field['id']]) && is_array($data[$field['id']])){
                     $data[$field['id']] = array_map(function ($val) use ($field) {
                         $tmpop = collect($field[$field['type']]['options'])->first(function ($op) use ($val) {
+                            // dd($val);
                             return ($op['id'] ?? $op['value'] === $val);
                         });
                         return isset($tmpop['name']) ? $tmpop['name'] : "";
@@ -70,7 +71,7 @@ class AnswerFormRequest extends FormRequest
             };
             if (FormLogicPropertyResolver::isRequired($property, $data)) {
                 $rules[] = 'required';
-
+                
                 if ($property['type'] == 'checkbox') {
                     // Required for checkboxes means true
                     $rules[] = 'accepted';
@@ -81,7 +82,7 @@ class AnswerFormRequest extends FormRequest
             } else {
                 $rules[] = 'nullable';
             }
-
+            
             // Clean id to escape "."
             $propertyId = $property['id'];
             if (in_array($property['type'], ['multi_select'])) {
@@ -138,6 +139,7 @@ class AnswerFormRequest extends FormRequest
                 $messages[$property['id'] . '.min'] = "A rating must be selected";
             }
         }
+        // dd($messages);
         return $messages;
     }
 
@@ -180,6 +182,7 @@ class AnswerFormRequest extends FormRequest
                     $allowedFileTypes = explode(",", $property['allowed_file_types']);
                 }
                 $this->requestRules[$property['id'].'.*'] = [new StorageFile($this->maxFileSize, $allowedFileTypes, $this->form)];
+                // dd("ok");
                 return ['array'];
             case 'email':
                 return ['email:filter'];

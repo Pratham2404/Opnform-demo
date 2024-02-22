@@ -185,7 +185,7 @@
           </div>
 
           <!-- add video here -->
-          <!--          <div class="max-w-5xl mx-auto mt-12 shadow-sm rounded-xl bg-blue-50 aspect-video" />-->
+          <!--          <div class="max-w-5xl mx-auto mt-12 shadow-sm rounded-xl bg-green-50 aspect-video" />-->
         </div>
       </section>
     </template>

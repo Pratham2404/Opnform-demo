@@ -85,7 +85,7 @@
              class="text-gray-400 hover:text-gray-500 dark:text-gray-600 dark:hover:text-gray-500 cursor-pointer hover:underline text-xs"
              target="_blank"
           >
-            Powered by <span class="font-semibold">OpnForm</span>
+            Powered by <span class="font-semibold">Medkart</span>
           </a>
         </p>
       </div>

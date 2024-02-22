@@ -2,7 +2,7 @@
   <th ref="th" :style="{width: width}">
     <slot/>
     <div v-if="allowResize" class="absolute right-0 top-0 w-0 z-10">
-      <div class="resize-handler bg-transparent cursor-move	 hover:bg-blue-500 opacity-80 transition-colors"
+      <div class="resize-handler bg-transparent cursor-move	 hover:bg-green-500 opacity-80 transition-colors"
            @mousedown="mouseDownHandler"
       />
     </div>

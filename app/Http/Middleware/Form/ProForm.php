@@ -18,7 +18,7 @@ class ProForm
     public function handle(Request $request, Closure $next)
     {
         if ($request->route('formId') && $form = Form::findOrFail($request->route('formId'))) {
-            if ($form->is_pro) {
+            if ($form) {
                 $request->merge([
                     'form' => $form,
                 ]);

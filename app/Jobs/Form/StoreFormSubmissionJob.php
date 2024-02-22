@@ -128,10 +128,10 @@ class StoreFormSubmissionJob implements ShouldQueue
                 }
             } else {
                 if ($field['type'] == 'text' && isset($field['generates_uuid']) && $field['generates_uuid']) {
-                    $finalData[$field['id']] = ($this->form->is_pro) ? Str::uuid() : "Please upgrade your OpenForm subscription to use our ID generation features";
+                    $finalData[$field['id']] = ($this->form) ? Str::uuid() : "Please upgrade your OpenForm subscription to use our ID generation features";
                 } else {
                     if ($field['type'] == 'text' && isset($field['generates_auto_increment_id']) && $field['generates_auto_increment_id']) {
-                        $finalData[$field['id']] = ($this->form->is_pro) ? (string) ($this->form->submissions_count + 1) : "Please upgrade your OpenForm subscription to use our ID generation features";
+                        $finalData[$field['id']] = ($this->form) ? (string) ($this->form->submissions_count + 1) : "Please upgrade your OpenForm subscription to use our ID generation features";
                     } else {
                         $finalData[$field['id']] = $answerValue;
                     }
@@ -139,7 +139,7 @@ class StoreFormSubmissionJob implements ShouldQueue
             }
 
             // For Singrature
-            if($this->form->is_pro && $field['type'] == 'signature') {
+            if($this->form && $field['type'] == 'signature') {
                 $finalData[$field['id']] = $this->storeSignature($answerValue);
             }
 

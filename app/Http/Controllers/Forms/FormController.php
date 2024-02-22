@@ -34,15 +34,14 @@ class FormController extends Controller
         $this->authorize('view', $workspace);
         $this->authorize('viewAny', Form::class);
 
-        $workspaceIsPro = $workspace->is_pro;
+        // $workspaceIsPro = $workspace->is_pro;
         $forms = $workspace->forms()
             ->orderByDesc('updated_at')
-            ->paginate(10)->through(function (Form $form) use ($workspace, $workspaceIsPro){
+            ->paginate(10)->through(function (Form $form) use ($workspace){
 
             // Add attributes for faster loading
             $form->extra = (object) [
                 'loadedWorkspace' => $workspace,
-                'workspaceIsPro' => $workspaceIsPro,
                 'userIsOwner' => true,
                 'cleanings' => $this->formCleaner
                     ->processForm(request(), $form)
@@ -66,12 +65,12 @@ class FormController extends Controller
             $this->authorize('view', $workspace);
             $this->authorize('viewAny', Form::class);
 
-            $workspaceIsPro = $workspace->is_pro;
-            $newForms = $workspace->forms()->get()->map(function (Form $form) use ($workspace, $workspaceIsPro){
+            // $workspaceIsPro = $workspace->is_pro;
+            $newForms = $workspace->forms()->get()->map(function (Form $form) use ($workspace){
                 // Add attributes for faster loading
                 $form->extra = (object) [
                     'loadedWorkspace' => $workspace,
-                    'workspaceIsPro' => $workspaceIsPro,
+                    // 'workspaceIsPro' => $workspaceIsPro,
                     'userIsOwner' => true,
                 ];
                 return $form;
@@ -107,6 +106,7 @@ class FormController extends Controller
                         $options = [];
                         foreach ($users as $user) {
                             $options[] = ["name" => $user->name, "value" => $user->ws_alternate_code];
+                            // dd($options);
                         }
                         $property[$property['type']]['options'] = $options;
                     }

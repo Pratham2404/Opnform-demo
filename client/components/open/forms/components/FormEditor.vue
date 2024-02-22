@@ -51,7 +51,7 @@
 
     <div class="w-full flex grow overflow-y-scroll relative bg-gray-50">
       <div class="relative w-full bg-white shrink-0 overflow-y-scroll border-r md:w-1/2 md:max-w-sm lg:w-2/5">
-        <div class="border-b bg-blue-50 p-5 text-nt-blue-dark md:hidden">
+        <div class="border-b bg-green-50 p-5 text-nt-blue-dark md:hidden">
           Please create this form on a device with a larger screen. That will allow you to preview your form changes.
         </div>
 

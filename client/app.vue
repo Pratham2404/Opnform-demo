@@ -39,14 +39,14 @@ import {useAppStore} from '~/stores/app'
 export default {
   el: '#app',
 
-  name: 'OpnForm',
+  name: 'Medkart',
 
   components: {},
 
   setup() {
     const config = useRuntimeConfig()
     useOpnSeoMeta({
-      title: 'OpnForm',
+      title: 'Medkart',
       description: 'Create beautiful forms for free. Unlimited fields, unlimited submissions. It\'s free and it takes less than 1 minute to create your first form.',
       ogImage: '/img/social-preview.jpg',
       robots: () => {
@@ -55,7 +55,7 @@ export default {
     })
     useHead({
       titleTemplate: (titleChunk) => {
-        return titleChunk ? `${titleChunk} - OpnForm` : 'OpnForm';
+        return titleChunk ? `${titleChunk} - Medkart` : 'Medkart';
       }
     })
 

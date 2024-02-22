@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border border-nt-blue-light bg-blue-50 dark:bg-notion-dark-light shadow rounded-md p-4 mb-5 w-full mx-auto mt-4 select-all"
+    class="border border-nt-blue-light bg-green-50 dark:bg-notion-dark-light shadow rounded-md p-4 mb-5 w-full mx-auto mt-4 select-all"
   >
     <div class="flex items-center">
       <p class="select-all flex-grow break-all" v-html="preFillUrl" />

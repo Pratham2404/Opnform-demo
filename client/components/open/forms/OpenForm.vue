@@ -407,6 +407,6 @@ export default {
 
 <style lang='scss' scoped>
 .ghost-item {
-  @apply bg-blue-100 dark:bg-blue-900 rounded-md;
+  @apply bg-green-100 dark:bg-green-900 rounded-md;
 }
 </style>

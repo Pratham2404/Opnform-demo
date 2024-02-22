@@ -150,9 +150,9 @@ export default {
       if (field.type === 'checkbox' && field.use_toggle_switch) {
         return 'ToggleSwitchInput'
       }
-      if (field.type === 'signature') {
-        return 'SignatureInput'
-      }
+      // if (field.type === 'signature') {
+      //   return 'SignatureInput'
+      // }
       if (field.type === 'phone_number' && !field.use_simple_text_input) {
         return 'PhoneInput'
       }
@@ -230,7 +230,7 @@ export default {
         classes += '-mx-4 px-4 -my-1 py-1 group/nffield relative transition-colors'
 
         if (this.beingEdited) {
-          classes += ' bg-blue-50 dark:bg-gray-800 rounded-md'
+          classes += ' bg-green-50 dark:bg-gray-800 rounded-md'
         }
       }
       return classes

@@ -1,5 +1,5 @@
 <template>
-  <div class="border border-nt-blue-light bg-blue-50 dark:bg-notion-dark-light rounded-md p-4 mb-5 w-full mx-auto mt-4 select-all">
+  <div class="border border-nt-blue-light bg-green-50 dark:bg-notion-dark-light rounded-md p-4 mb-5 w-full mx-auto mt-4 select-all">
     <div v-if="false" class="relative">
       <div class="absolute inset-0 z-10">
         <div class="p-5 max-w-md mx-auto mt-5">

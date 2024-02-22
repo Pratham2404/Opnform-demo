@@ -41,7 +41,7 @@
         <p>Paste the following code snippet in the <b>&lt;head&gt;</b> section of your website.</p>
 
         <div
-          class="border border-nt-blue-light bg-blue-50 dark:bg-notion-dark-light rounded-md p-4 mb-5 w-full mx-auto mt-4 select-all"
+          class="border border-nt-blue-light bg-green-50 dark:bg-notion-dark-light rounded-md p-4 mb-5 w-full mx-auto mt-4 select-all"
         >
           <div class="flex items-center">
             <p class="select-all text-nt-blue flex-grow break-all">

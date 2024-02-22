@@ -5,8 +5,8 @@
         <div class="flex items-center">
           <NuxtLink :to="{ name: user ? 'home' : 'index' }"
                     class="flex-shrink-0 font-semibold hover:no-underline flex items-center">
-            <NuxtImg src="/img/logo.svg" alt="notion tools logo" class="w-8 h-8"/>
-            <span class="ml-2 text-md hidden sm:inline text-black dark:text-white">OpnForm</span>
+            <NuxtImg src="/img/logo.png" alt="notion tools logo" class="w-8 h-8"/>
+            <span class="ml-2 text-md hidden sm:inline text-black dark:text-white">Medkart</span>
           </NuxtLink>
           <workspace-dropdown class="ml-6"/>
         </div>

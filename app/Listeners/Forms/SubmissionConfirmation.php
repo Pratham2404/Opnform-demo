@@ -29,7 +29,7 @@ class SubmissionConfirmation implements ShouldQueue
     public function handle(FormSubmitted $event)
     {
         if (
-            !$event->form->is_pro ||
+            !$event->form ||
             !$event->form->send_submission_confirmation ||
             $this->riskLimitReached($event) // To avoid phishing abuse we limit this feature for risky users
         ) {

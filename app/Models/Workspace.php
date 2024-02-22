@@ -85,36 +85,12 @@ class Workspace extends Model implements CachableAttributes
 
     public function getIsProAttribute()
     {
-        if(is_null(config('cashier.key'))){
-            return true;    // If no paid plan so TRUE for ALL
-        }
-
-        return $this->remember('is_pro', 15 * 60, function(): bool {
-            // Make sure at least one owner is pro
-            foreach ($this->owners as $owner) {
-                if ($owner->is_subscribed) {
-                    return true;
-                }
-            }
-            return false;
-        });
+        return true;
     }
 
     public function getIsEnterpriseAttribute()
     {
-        if(is_null(config('cashier.key'))){
-            return true;    // If no paid plan so TRUE for ALL
-        }
-
-        return $this->remember('is_enterprise', 15 * 60, function(): bool {
-            // Make sure at least one owner is pro
-            foreach ($this->owners as $owner) {
-                if ($owner->has_enterprise_subscription) {
-                    return true;
-                }
-            }
-            return false;
-        });
+        return true;
     }
 
     public function getIsRiskyAttribute()

@@ -23,7 +23,7 @@
     >
       <template #item="{element, index}">
         <div class="w-full mx-auto transition-colors"
-             :class="{'bg-gray-100 dark:bg-gray-800':element.hidden,'bg-white dark:bg-notion-dark-light':!element.hidden && !element.type==='nf-page-break', 'border-b': (index!== form.properties.length -1), 'bg-blue-50 dark:bg-blue-900':element && element.type==='nf-page-break'}"
+             :class="{'bg-gray-100 dark:bg-gray-800':element.hidden,'bg-white dark:bg-notion-dark-light':!element.hidden && !element.type==='nf-page-break', 'border-b': (index!== form.properties.length -1), 'bg-green-50 dark:bg-green-900':element && element.type==='nf-page-break'}"
         >
           <div v-if="element" class="flex items-center space-x-1 group py-2 pr-4 relative">
             <!-- Drag handler -->

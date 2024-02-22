@@ -91,7 +91,7 @@ class PublicFormController extends Controller
         return $this->success(array_merge([
             'message' => 'Form submission saved.',
             'submission_id' => $submissionId
-        ], $request->form->is_pro && $request->form->redirect_url ? [
+        ], $request->form && $request->form->redirect_url ? [
             'redirect' => true,
             'redirect_url' => $request->form->redirect_url
         ] : [
